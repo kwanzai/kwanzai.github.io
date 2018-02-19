@@ -14,7 +14,7 @@ function setup() {
   var graphics = new PIXI.Graphics();
 
   //Create the sprites  //Create an alias for the texture atlas frame ids
-  id = resources["images/treasureHunter.json"].textures;
+  id = resources["/StillStanding/images/treasureHunter.json"].textures;
 
   //Dungeon
   dungeon = new Sprite(id["dungeon.png"]);

@@ -42,3 +42,10 @@ player is immobile
 aim and shoot with mouse, show firing angle
 shoot slow moving projectiles at moving targets
 some enemies can shoot, player can shoot enemy shots, or parry with perfect timing when hit.
+
+
+github upload:
+
+git add --all
+git commit -m "Initial commit"
+git push -u origin master

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Still Standing</title>
+</head>
+  <script src="pixi/pixi.min.js"></script>
+  <script src="scripts/randomInt.js"></script>
+<!--   <script src="scripts/keyboard.js"></script> -->
+  <script src="scripts/hitTestRectangle.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/Enemy.js"></script>
+  <script src="scripts/Player.js"></script>
+  
+<body>
+  <script type="text/javascript">
+    let type = "WebGL"
+    if(!PIXI.utils.isWebGLSupported()){
+      type = "canvas"
+    }
+    
+    let Application = PIXI.Application,
+        Container = PIXI.Container,
+        loader = PIXI.loader,
+        resources = PIXI.loader.resources,
+        Graphics = PIXI.Graphics,
+        TextureCache = PIXI.utils.TextureCache,
+        Sprite = PIXI.Sprite,
+        Text = PIXI.Text,
+        TextStyle = PIXI.TextStyle;
+        Texture = PIXI.Texture;
+        Point = PIXI.Point;
+    
+    //Create a Pixi Application
+    let app = new Application({ 
+        width: 512, 
+        height: 512,                       
+        antialiasing: true, 
+        transparent: false, 
+        resolution: 1
+      }
+    );
+    
+    document.body.appendChild(app.view);
+    
+    loader
+      .add("images/treasureHunter.json")
+      .load(setup)
+    
+  </script>
+  
+  <style>* {padding: 0; margin: 0}</style>
+  
+</body>
+</html>

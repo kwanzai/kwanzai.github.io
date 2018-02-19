@@ -1,0 +1,44 @@
+to do:
+
+//collision
+  enemys collide with player
+    reduce hp (remove enemy?)
+    
+  //shots collide with enemys
+    //reduce enemy hp
+    //if hp <= 0 destroy enemy (pop from array)
+
+
+//start player in the middle or bottom of the screen
+
+//spawn enemies on the outskirts
+  //spawn one every 5 seconds or so for now
+    // figure out why the spawning isn't working (spawn positions are there)
+  //add to the array when spawned, 
+  pop when killed
+
+//move enemies towards the player
+  //create velocity towards the players location (random velocity for now)
+
+//create projectile object
+
+//enable player projectiles
+  //on click:
+    //get mouse position
+    //spawn projectile
+    //move projectile towards the position (velocity tbd)
+    
+    
+remove unneeded rotated player textures from Player class constructor
+
+
+main idea:
+
+simple html 5 exercise
+
+projectile based defense
+
+player is immobile
+aim and shoot with mouse, show firing angle
+shoot slow moving projectiles at moving targets
+some enemies can shoot, player can shoot enemy shots, or parry with perfect timing when hit.

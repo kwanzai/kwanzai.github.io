@@ -1,6 +1,6 @@
 var MAX_HP = 10;
 
-var bulletTex = new PIXI.Texture.fromImage('/images/jebaited.png');
+var bulletTex = new PIXI.Texture.fromImage('images/jebaited.png');
 
 
 class Player {
